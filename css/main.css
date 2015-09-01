@@ -99,11 +99,11 @@ p, h2 {
 }
 
 header, footer {
-    background-color: #8E8AB6;
+    background-color: #C0BED0;
 }
 
 header {
-    padding: 15px 0;
+    padding: 44px 0 15px 0;
 }
 
 header button {
@@ -112,7 +112,7 @@ header button {
 
 #wrapper {
     text-align: center;
-    background-color: #FFFBB8;
+    background-color: #FFFDE5;
     padding-bottom: 70px;
     padding-top: 20px;
 }
@@ -136,15 +136,18 @@ header button {
 
 header h1{
     display: block;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
+    position: fixed;
+    top: 0;
+    background-color: #C0BED0;
 }
 
 footer {
+    width: 100%;
     position: fixed;
     bottom: 0;
-    width: 100%;
 }
 
 #deletePrev {
