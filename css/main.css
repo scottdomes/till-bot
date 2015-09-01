@@ -98,8 +98,12 @@ p, h2 {
     margin: 0;
 }
 
+h1, h2, h3, p, button {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 header, footer {
-    background-color: #C0BED0;
+    background-color: #A09DC2;
 }
 
 header {
@@ -112,7 +116,7 @@ header button {
 
 #wrapper {
     text-align: center;
-    background-color: #FFFDE5;
+    background-color: #FFFCC7;
     padding-bottom: 70px;
     padding-top: 20px;
 }
@@ -141,7 +145,7 @@ header h1{
     text-align: center;
     position: fixed;
     top: 0;
-    background-color: #C0BED0;
+    background-color: #A09DC2;
 }
 
 footer {
