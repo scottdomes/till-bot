@@ -95,8 +95,15 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+#wrapper {
+    text-align: center;
+}
+
 #wrapper button {
     margin-bottom: 15px;
+    height: 60px;
+    margin: 5px 10px;
+    width: 80%;
 }
 
 #enter {
@@ -117,9 +124,13 @@ textarea {
 }
 
 #deletePrev {
+    position: fixed;
+    bottom: 0;
     display: block;
-    width: 70%;
-    margin: 0 auto;
+    width: 90%;
+    margin-left: 5%;
+    height: 40px;
+    color: red;
 }
 
 
