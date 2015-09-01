@@ -99,6 +99,28 @@ textarea {
     margin-bottom: 15px;
 }
 
+#enter {
+    display: none;
+}
+
+#clear {
+    display: block;
+    width: 80%;
+    margin: 15px auto;
+}
+
+#total {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#deletePrev {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
 
 
 
