@@ -98,6 +98,11 @@ p, h2 {
     margin: 0;
 }
 
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
 h1, h2, h3, p, button {
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -114,9 +119,19 @@ header button {
     height: 40px;
 }
 
+header h1 {
+    color: white;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    background-color: #A09DC2;
+}
+
 #wrapper {
     text-align: center;
-    background-color: #FFFCC7;
     padding-bottom: 70px;
     padding-top: 20px;
 }
@@ -124,8 +139,15 @@ header button {
 #wrapper button {
     margin-bottom: 15px;
     height: 60px;
-    margin: 5px 10px;
-    width: 80%;
+    margin: 5px 3% 5px 20%;
+    width: 75%;
+}
+
+#wrapper span {
+    height: 44px;
+    margin-top: -44px;
+    visibility: hidden;
+    display: block;
 }
 
 #enter {
@@ -138,15 +160,23 @@ header button {
     margin: 0 auto 15px auto;
 }
 
-header h1{
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
+nav {
     position: fixed;
-    top: 0;
-    background-color: #A09DC2;
+    top: 23%;
+    left: 0;
 }
+
+nav a {
+    display: block;
+    padding: 15px 10px;
+    color: white;
+    text-decoration: none;
+    background: #A09DC2;
+    margin-bottom: 20px;
+    width: 35px;
+    text-align: center;
+}
+
 
 footer {
     width: 100%;

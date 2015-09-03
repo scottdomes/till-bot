@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- Disable zoom on mobile -->
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
         <title>TillBot</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,26 +31,31 @@
         </header>
 
         <div id="wrapper">
-            <h2>Smoothies</h2>
+            <!-- Spans allow anchor links in nav to go beneath fixed header-->
+            <span id="smoothies"></span>
+            <h2>1. Smoothies</h2>
             <button class="item" value="5.50">Standard Smoothie (Reg)</button>
             <button class="item" value="4.00">Snack</button>
             <button class="item" value="6.00">High Protein/Superfood Smoothie (Reg)</button>
             <button class="item" value="6.25">Hardcore/Staff Smoothie (Reg)</button>
             <button class="item" value="4.35">Snack</button>
             <button class="item" value="6.50">HP Superfood Smoothie (Reg)</button>
-            <h2>Combos/Food</h2>
+            <span id="combos"></span>
+            <h2>2. Combos/Food</h2>
             <button class="item" value="10.00">Regular (Hardcore/Standard) Combo</button>
             <button class="item" value="11.00">Regular (High Protein/Superfood) Combo</button>
             <button class="item" value="9.00">Regular Egg Scrambler Combo</button>
             <button class="item" value="8.50">Snack Combo</button>
             <button class="item" value="6.00">Snack Egg Scrambler Combo</button>
             <button class="item" value="5.50">Wrap/ Panini (No Combo)</button>
-            <h2>Shots</h2>
+            <span id="shots"></span>
+            <h2>3. Shots</h2>
             <button class="item" value="3.00">Single Wheatgrass</button>
             <button class="item" value="4.50">Double Wheatgrass</button>
             <button class="item" value="2.75">Single Matcha/ Acai</button>
             <button class="item" value="3.75">Double Matcha/ Acai</button>
-            <h2>Snacks</h2>
+            <span id="snacks"></span>
+            <h2>4. Snacks</h2>
             <button class="item" value=".47">Extra Booster</booster>
             <button class="item" value="3.50">Quest Bar</button>
             <button class="item" value="2.50">Kind Bar</button>
@@ -56,6 +63,15 @@
             <button class="item" value="1.50">Water</button>
             <button class="item" value="3.00">Coconut Water/Zola Acai</button>
         </div>
+
+        <nav id="sidebar">
+            <ul>
+                <li><a href="#smoothies">1</a></li>
+                <li><a href="#combos">2</a></li>
+                <li><a href="#shots">3</a></li>
+                <li><a href="#snacks">4</a></li>
+            </ul>
+        </nav>
 
         <footer>
             <button id="deletePrev">Delete Previous</button>
@@ -65,6 +81,25 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
+
+        <!-- SMOOTH SCROLL SCRIPT ---------------------------------- ---->
+               <script>
+        $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+           if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(  1) +']');
+         if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+          return false;
+      }
+           }
+             });
+            });
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
