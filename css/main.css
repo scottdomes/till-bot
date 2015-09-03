@@ -134,6 +134,7 @@ header h1 {
     text-align: center;
     padding-bottom: 70px;
     padding-top: 20px;
+    background-color: #ecf0f1;
 }
 
 #wrapper button {
@@ -141,6 +142,11 @@ header h1 {
     height: 60px;
     margin: 5px 3% 5px 20%;
     width: 75%;
+}
+
+button {
+    background-color: white;
+    border: 1px outset buttonface;
 }
 
 #wrapper span {
