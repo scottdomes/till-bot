@@ -107,27 +107,48 @@ h1, h2, h3, p, button {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-header, footer {
+header, footer, #topper {
     background-color: #A09DC2;
 }
 
 header {
-    padding: 44px 0 15px 0;
+    position: fixed;
+    top: 0;
+    background-color: #A09DC2;
+    width: 100%;
 }
 
-header button {
+#bubbleContent {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#speechBubble {
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    width: 25%;
+    font-size: 6px;
+    text-align: center;
+    margin: 1% 2% 0 0;
+    background-color: #6C689F;
+    padding: 2px;
+    border-radius: 10px;
+    color: black;
+    height: 32px;
+}
+
+#topper button {
     height: 40px;
 }
 
 header h1 {
     color: white;
-    display: block;
-    width: 100%;
-    margin: 0 auto;
+    display: inline-block;
+    width: 70%;
+    margin: 0;
     text-align: center;
-    position: fixed;
-    top: 0;
-    background-color: #A09DC2;
+
 }
 
 #wrapper {
@@ -145,8 +166,9 @@ header h1 {
 }
 
 button {
-    background-color: white;
-    border: 1px outset buttonface;
+    background-color: #6C689F;
+    color: white;
+    border-radius: 25px;
 }
 
 #wrapper span {
@@ -156,6 +178,10 @@ button {
     display: block;
 }
 
+#topper {
+    padding: 44px 0 15px 0;
+}
+
 #enter {
     display: none;
 }
@@ -163,7 +189,9 @@ button {
 #clear {
     display: block;
     width: 80%;
-    margin: 0 auto 15px auto;
+    margin: 0 auto;
+    color: white;
+    background-color: #E49FA4;
 }
 
 nav {
@@ -181,6 +209,7 @@ nav a {
     margin-bottom: 20px;
     width: 35px;
     text-align: center;
+    border-radius: 45px;
 }
 
 
@@ -195,7 +224,8 @@ footer {
     width: 90%;
     margin-left: 5%;
     height: 40px;
-    color: red;
+    color: white;
+    background-color: #E49FA4;
 }
 
 
