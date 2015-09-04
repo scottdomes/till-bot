@@ -13,6 +13,11 @@ $(".item").click(function() {
 		$(this).css("background-color", "#6C689F")
 	});
 
+	// Button press animation for touchscreens
+	$(this).on("tap", function () {
+		$(this).css("background-color", "#3C377D").fadeIn(50);
+		$(this).css("background-color", "#6C689F").fadeIn(100);
+	});
 
 
 	// Parse total back to a number
